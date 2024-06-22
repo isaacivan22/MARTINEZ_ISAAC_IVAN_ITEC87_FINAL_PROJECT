@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8CABFF;
+}
+
+header {
+    background-color: #512B81;
+    color: #fff;
+    font-family: Georgia, serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    height: 200px;
+
+}
+header div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: -50px;
+    text-decoration-line: none;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 10px;
+    text-decoration-line: none;
+    border: 2px solid #35155D;
+    border-radius: 2em;
+    background-color: #35155D;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #4477CE; 
+    border-color: transparent;
+    color: white; 
+}
+
+section {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding-top: 300px;
+    margin-bottom: -50px;
+}
+
+.item {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.total-container {
+    width: 30%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+	margin-left: 600px;
+
+   
+}
+
+
+h2 {
+    text-align: left;
+    margin-top: -50px;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: -15px;
+}
+
+input {
+    text-align: center;
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sari-Sari Store</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: lightblue !important;
+        }
+        .container-fluid{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #8CABFF;
+                color: black;
+                align-items: center;
+        
+                width: 100%;
+            }
+
+        header {
+                background-color: #512B81;
+                color: #fff;
+                font-family: Georgia, serif;
+                padding: 10px;
+                text-align: center;
+                width: 111%;
+                top: 200px;
+                height: 200px;
+                padding-left: -200px;
+            }
+            header div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: -2   0px;
+            }
+            section {
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 20px;
+                padding-top: 300px;
+                margin-bottom: -50px;
+                margin-top: 20px;
+                margin-left: -170px;
+            }
+    
+            .item {
+                width: 200px;
+                margin: 10px;
+                padding: -50px;
+                text-align: center;
+                text-indent: 35px;
+                margin-top: -150px;
+                margin-right: 25px;
+                margin-left: -50px;
+            }
+            
+            .item img {
+                margin-right: 30px;
+            }
+    
+            .container-fluid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            .total-container {
+                width: 30%;
+                padding: 20px;
+                text-align: center;
+                margin-top: 250px;
+                margin-bottom: 15   0px;
+                margin-left: 50px;
+            }
+            .totalAmount{
+                background-color: white;
+
+            }
+            h2 {
+                text-align: center;
+                margin-top: -200px;
+                color: #35155D;
+                margin-left: 40px;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-top: -15px;
+                color: white;
+            }
+    
+            input {
+                text-align: center;              
+            }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a style="color: lightblue;font-weight: bold;" class="navbar-brand" href="index.html">MyPortfolio</a>
+        <button style="background-color: lightblue;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a style="text-indent: 10px;color: white;" class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a style="text-indent: 10px;color: white" class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a style="text-indent: 10px;color: white" class="nav-link" href="cor.html">COR</a>
+            </li>
+            <li class="nav-item">
+              <a style="text-indent: 10px;color: white" class="nav-link" href="restaurant.html">Restaurant</a>
+            </li>
+            <li class="nav-item">
+              <a style="text-indent: 10px;color: white" class="nav-link active" href="sari-sari.html">Sari-Sari</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        
+    <div class="container-fluid">
+        <!-- Original content of sari-sari.html goes here -->
+        <header>
+          <div>
+          <img style="margin-top: -15px;" src="images/logo.png" alt="logo" width="200" height="140">
+          <h1>FIRST CLASS</h1>
+          </div>
+          <nav>
+              <a style="text-decoration: none;display: inline-block;padding: 10px;border-radius: 2em;color: white;background-color:#35155D;transition:  background-color 0.3s,border-color 0.3s,color 0.3s;border: 2px solid #35155D;" href="#jeans">Jeans</a> 
+              <a style="text-decoration: none;display: inline-block;padding: 10px;border-radius: 2em;color: white;background-color:#35155D;transition:  background-color 0.3s,border-color 0.3s,color 0.3s;border: 2px solid #35155D;" href="#tshirts">T-Shirts</a> 
+              <a style="text-decoration: none;display: inline-block;padding: 10px;border-radius: 2em;color: white;background-color:#35155D;transition:  background-color 0.3s,border-color 0.3s,color 0.3s;border: 2px solid #35155D;" href="#perfume">Perfume</a> 
+              <a style="text-decoration: none;display: inline-block;padding: 10px;border-radius: 2em;color: white;background-color:#35155D;transition:  background-color 0.3s,border-color 0.3s,color 0.3s;border: 2px solid #35155D;" href="#sando">Sando</a> 
+              <a style="text-decoration: none;display: inline-block;padding: 10px;border-radius: 2em;color: white;background-color:#35155D;transition:  background-color 0.3s,border-color 0.3s,color 0.3s;border: 2px solid #35155D;" href="#toys">Toys</a>
+              <a style="background-color: #4477CE;text-decoration: none;text-decoration: none;display: inline-block;padding: 10px;border-radius: 2em;color: white;transition:  background-color 0.3s,border-color 0.3s,color 0.3s;border: 2px solid #35155D;" href="#" onclick="manageStock()">Stock Management</a>
+          </nav>
+      </header>
+      <body>
+          <div class="container">
+              <section id="jeans">
+          <h2>Jeans</h2>
+          <div class="item">
+              <label for="jeans1">
+                  <img src="images/jeans1.jpg" alt="Jeans 1 Image" width="150" height="200"><br>
+                  <input type="checkbox" id="jeans1" name="jeans1" value="1700" onchange="updateTotalAmount()">Washed Jeans - P1700<br>
+                  <input style="width: 80px;" type="number" id="quantity_jeans1" name="quantity_jeans1" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                  <br>
+                  <span class="stock">Stock: 10</span>
+                  <br>
+                  
+              </label>
+          </div>
+      
+          <div class="item">
+              <label for="jeans2">
+                  <img src="images/jeans2.jpg" alt="Jeans 2 Image" width="150" height="200">
+                  <input type="checkbox" id="jeans2" name="jeans2" value="1500" onchange="updateTotalAmount()">Cargo Jeans - P1500<br>
+                  <input style="width: 80px;" type="number" id="quantity_jeans2" name="quantity_jeans2" value="0" min="1" max="15" onchange="updateTotalAmount()">
+                  <br><span class="stock">Stock: 10</span>
+                  <br>
+                  
+              </label>
+          </div>
+      
+          <div class="item">
+              <label for="jeans3">
+                  <img src="images/jeans3.jpg" alt="Jeans 3 Image" width="150" height="200">
+                  <input type="checkbox" id="jeans3" name="jeans3" value="1200" onchange="updateTotalAmount()">Jogger Jeans - P1200<br>
+                  <input style="width: 80px;" type="number" id="quantity_jeans3" name="quantity_jeans3" value="0" min="1" max="20" onchange="updateTotalAmount()">
+                  <br><span class="stock">Stock: 10</span>
+                  <br>
+                  
+              </label>
+          </div>
+      
+          <div class="item">
+              <label for="jeans4">
+                  <img src="images/jeans4.jpg" alt="Jeans 4 Image" width="150" height="200">
+                  <input type="checkbox" id="jeans4" name="jeans4" value="1000" onchange="updateTotalAmount()">Ripped Jeans - P1000<br>
+                  <input style="width: 80px;" type="number" id="quantity_jeans4" name="quantity_jeans4" value="0" min="1" max="25" onchange="updateTotalAmount()">
+                  <br><span class="stock">Stock: 10</span>
+                  <br>
+                  
+              </label>
+          </div>          
+      </section>  
+      
+              <section id="tshirts">
+                  <h2>T-Shirts</h2>
+                  <div class="item">
+                      <label for="tshirt1">
+                          <img src="images/tshirt.jpg" alt="Tshirt 1 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="tshirt1" name="tshirt1" value="1700" onchange="updateTotalAmount()">Tees (Black) - P600<br>
+                          <input style="width: 80px;" type="number" id="quantity_tshirt1" name="quantity_tshirt1" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+      
+                  <div class="item">
+                      <label for="tshirt2">
+                          <img src="images/tshirt1.jpg" alt="Tshirt 2 Image" width="150" height="200">
+                          <input type="checkbox" id="tshirt2" name="tshirt2" value="1500" onchange="updateTotalAmount()">Tees (Red) - P550<br>
+                          <input style="width: 80px;" type="number" id="quantity_tshirt2" name="quantity_tshirt2" value="0" min="1" max="15" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                              
+                      </label>
+                  </div>
+                  
+                  <div class="item">
+                      <label for="tshirt3">
+                          <img src="images/tshirt2.jpg" alt="TShirt 3 Image" width="150" height="200">
+                          <input type="checkbox" id="tshirt3" name="tshirt3" value="1200" onchange="updateTotalAmount()">Tees (White) - P500<br>
+                          <input style="width: 80px;" type="number" id="quantity_tshirt3" name="quantity_tshirt3" value="0" min="1" max="20" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                         
+                      </label>
+                  </div>
+      
+                  <div class="item">
+                      <label for="tshirt4">
+                          <img src="images/tshirt3.jpg" alt="Tshirt 4 Image" width="150" height="200">
+                          <input type="checkbox" id="tshirt4" name="tshirt4" value="1000" onchange="updateTotalAmount()">Tees (Blue) - P1000<br>
+                          <input style="width: 80px;" type="number" id="quantity_tshirt4" name="quantity_tshirt4" value="0" min="1" max="25" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+              </section>
+        
+              <section id="perfume">
+                  <h2>Perfume</h2>
+                  <div class="item">
+                      <label for="perfume1">
+                          <img src="images/perfume1.jpg" alt="Perfume 1 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="perfume1" name="perfume1" value="4500" onchange="updateTotalAmount()">Creed Aventus - P4500<br>
+                          <input style="width: 80px;" type="number" id="quantity_perfume1" name="quantity_perfume1" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+                  
+                  <div class="item">
+                      <label for="perfume2">
+                          <img src="images/perfume2.jpg" alt="Perfume 2 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="perfume2" name="perfume2" value="3000" onchange="updateTotalAmount()">JPG Ultra Male - P3000<br>
+                          <input style="width: 80px;" type="number" id="quantity_perfume2" name="quantity_perfume2" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+                  
+                  <div class="item">
+                      <label for="perfume3">
+                          <img src="images/perfume3.jpg" alt="Perfume 3 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="perfume3" name="perfume3" value="2500" onchange="updateTotalAmount()">Versace Eros Flame - P2500<br>
+                          <input style="width: 80px;" type="number" id="quantity_perfume3" name="quantity_perfume3" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                         
+                      </label>
+                  </div>
+              
+                  <div class="item">
+                      <label for="perfume4">
+                          <img src="images/perfume4.jpg" alt="Perfume 4 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="perfume4" name="perfume4" value="2000" onchange="updateTotalAmount()">Bleu De Chanel - P2000<br>
+                          <input style="width: 80px;" type="number" id="quantity_perfume4" name="quantity_perfume4" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+              </section>
+              
+              <section id="sando">
+                  <h2>Sando</h2>
+                  <div class="item">
+                      <label for="sando1">
+                          <img src="images/sando1.jpg" alt="Sando 1 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="sando1" name="sando1" value="1000" onchange="updateTotalAmount()">Lakers Jersey - P1000<br>
+                          <input style="width: 80px;" type="number" id="quantity_sando1" name="quantity_sando1" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div> 
+                  
+                  <div class="item">
+                      <label for="sando2">
+                          <img src="images/sando2.jpg" alt="Sando 2 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="sando2" name="sando2" value="1000" onchange="updateTotalAmount()">Celtics Jersey - P1000<br>
+                          <input style="width: 80px;" type="number" id="quantity_sando2" name="quantity_sando2" value="0" min="0" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+              
+                  <div class="item">
+                      <label for="sando3">
+                          <img src="images/sando3.jpg" alt="Sando 3 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="sando3" name="sando3" value="1000" onchange="updateTotalAmount()">Bulls Jersey - P1000<br>
+                          <input style="width: 80px;" type="number" id="quantity_sando3" name="quantity_sando3" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                         
+                      </label>
+                  </div>
+                  
+                  <div class="item">
+                      <label for="sando4">
+                          <img src="images/sando4.jpg" alt="Sando 4 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="sando4" name="sando4" value="1000" onchange="updateTotalAmount()">Warriors Jersey - P1000<br>
+                          <input style="width: 80px;" type="number" id="quantity_sando4" name="quantity_sando4" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+              </section>
+              
+              <section id="toys">
+                  <h2>Toys</h2>
+                  <div class="item">
+                      <label for="toys1">
+                          <img src="images/toys1.jpg" alt="Toys 1 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="toys1" name="toys1" value="600" onchange="updateTotalAmount()">Lego Spiderman - P600<br>
+                          <input style="width: 80px;" type="number" id="quantity_toys1" name="quantity_toys1" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+              
+                  <div class="item">
+                      <label for="toys2">
+                          <img src="images/toys2.jpg" alt="Toys 2 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="toys2" name="toys2" value="500" onchange="updateTotalAmount()">Lego Venom - P500<br>
+                          <input style="width: 80px;" type="number" id="quantity_toys2" name="quantity_toys2" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+                 
+                  <div class="item">
+                      <label for="toys3">
+                          <img src="images/toys3.jpg" alt="Toys 3 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="toys3" name="toys3" value="600" onchange="updateTotalAmount()">Lego Iron Man - P600<br>
+                          <input style="width: 80px;" type="number" id="quantity_toys3" name="quantity_toys3" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+              
+                  <div class="item">
+                      <label for="toys4">
+                          <img src="images/toys4.jpg" alt="Toys 4 Image" width="150" height="200"><br>
+                          <input type="checkbox" id="toys4" name="toys4" value="500" onchange="updateTotalAmount()">Lego Goblin - P500<br>
+                          <input style="width: 80px;" type="number" id="quantity_toys4" name="quantity_toys4" value="0" min="1" max="10" onchange="updateTotalAmount()">
+                          <br><span class="stock">Stock: 10</span>
+                          <br>
+                          
+                      </label>
+                  </div>
+              </section>
+               </div>
+          
+              <div class="total-container">
+                  <h2 style="margin-bottom: 5px; margin-left:10px">Shopping Cart</h2>
+                  <p style="background-color: white;" id="totalAmount">Total: P0.00</p>
+                  <button style="margin-top: -15px; background-color: #1fd655; color: white; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#14a042'" onmouseout="this.style.backgroundColor='#1fd655'" onclick="calculateTotal()">Proceed to Checkout</button>
+      
+              </div>
+         
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascript/sari-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Restaurant</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: lightblue !important;
+        }
+      header {
+        margin-top: -20px;
+        padding: 10px;
+        margin-left: -12px;
+      }
+
+   h1 {
+    color: teal;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 70px;
+    margin-top: 15px;   
+    margin-bottom: 2px;    
+}
+h2 {
+    margin-bottom: 10px;
+    padding-top: 165px;
+    color: teal;
+    font-family: 'Arial', sans-serif;
+}
+      marquee {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: teal;
+}
+      .calculate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: -11px;
+    }
+
+      .calculate-button:hover {
+          background-color: #45a049;
+    }
+
+      .calculate-button:active {
+          background-color: #3e8e41;
+    }
+
+      footer{
+          font-size: 15px;
+          font-weight: bold;
+          font-family: 'Arial', sans-serif;
+          color:teal;
+    }
+    label{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+img{
+    padding-bottom: 1px;
+}
+
+
+    
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a style="color: lightblue;font-weight: bold;" class="navbar-brand" href="index.html">MyPortfolio</a>
+      <button style="background-color: lightblue;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a style="text-indent: 10px;color: white;" class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a style="text-indent: 10px;color: white" class="nav-link" href="cv.html">CV</a>
+          </li>
+          <li class="nav-item">
+            <a style="text-indent: 10px;color: white" class="nav-link" href="cor.html">COR</a>
+          </li>
+          <li class="nav-item">
+            <a style="text-indent: 10px;color: white" class="nav-link active" href="restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a style="text-indent: 10px;color: white" class="nav-link" href="sari-sari.html">Sari-Sari</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div style="background-color: #b2fcbf;" class="container-fluid">
+        <!-- Original content of sari-sari.html goes here -->
+        <center>
+          <header style="background-color: #97f8a7;width: 102%;height: 60%;">
+              <h1 style="color: teal;font-family: 'Brush Script MT',cursive;font-size: 70px;">Mang Ivan</h1>
+              <marquee style="color: teal;font-size: 17px;" behavior="scroll" direction="left">"From our kitchen to your heart"</marquee>
+          </header>
+          <nav style="z-index: 1000;padding-right: -250px;width: 100%;margin-top: 20px;">     
+              <a style="background-color: teal;padding: 10px 30px;text-align: center;color: white;text-decoration: none;margin: 0 5px;border-radius: 10px;transition: background-color 0.3s ease;" href="#main">Main Dish</a>
+              <a style="background-color: teal;padding: 10px 30px;text-align: center;color: white;text-decoration: none;margin: 0 5px;border-radius: 10px;transition: background-color 0.3s ease;" href="#vegetable">Vegetables</a>
+              <a style="background-color: teal;padding: 10px 30px;text-align: center;color: white;text-decoration: none;margin: 0 5px;border-radius: 10px;transition: background-color 0.3s ease;" href="#dessert">Desserts</a>
+              <a style="background-color: teal;padding: 10px 30px;text-align: center;color: white;text-decoration: none;margin: 0 5px;border-radius: 10px;transition: background-color 0.3s ease;" href="#drink">Drinks</a>
+              <a style="background-color: teal;padding: 10px 30px;text-align: center;color: white;text-decoration: none;margin: 0 5px;border-radius: 10px;transition: background-color 0.3s ease;" href="#add-on">Add-Ons</a>             
+          </nav> 
+      
+          <section id="main">
+              <h2>Main Dish</h2>
+              <img src="images/bulalo.png" id="image" alt="Bulalo" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox1" name="main-dish" value="bulalo">Bulalo (P750)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity1" min="1" value="1">
+              <br>
+              <img src="images/sinigang.png" id="image2" alt="Sinigang" width="100" height="100">
+              <br>         
+              <label><input type="checkbox" id="checkbox2" name="main-dish" value="sinigang">Sinigang na Bangus (P400)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity2" min="1" value="1">
+              <br>     
+              <img src="images/caldereta.png" id="image3" alt="Caldereta" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox3" name="main-dish" value="caldereta">Beef Caldereta (P300)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity3" min="1" value="1">
+              <br> 
+              <img src="images/inasal.png" id="image4" alt="Inasal" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox4" name="main-dish" value="inasal">Chicken Inasal (P150)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity4" min="1" value="1">
+              <br> 
+              <img src="images/sisig.png" id="image5" alt="Sisig" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox5" name="main-dish" value="sisig">Sizzling Sisig (P150)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity5" min="1" value="1">
+              <br>    
+           </section>
+          <section id="vegetable">
+              <h2>Vegetables</h2>   
+              <img src="images/chopsuey.png" id="image6" alt="Chopsuey" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox6" name="vegetable" value="chopsuey">Chopsuey (P150)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity6" min="1" value="1">
+              <br>
+              <img src="images/pinakbet.png" id="image7" alt="Pinakbet" width="100" height="100">
+              <br>
+              <label> <input type="checkbox" id="checkbox7" name="vegetable" value="pinakbet">Pinakbet (P120)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity7" min="1" value="1">
+              <br>
+              <img src="images/talong.png" id="image8" alt="Tortang Talong" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox8" name="vegetable" value="tortang-talong">Tortang Talong (P80)</label>     
+              <input style="width:35px;text-align: center;" type="number" id="quantity8" min="1" value="1">
+              <br>  
+          </section>
+      
+          <section id="dessert">
+              <h2>Desserts</h2>
+              <img src="images/lecheflan.png" id="image9" alt="Leche Flan" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox9" name="dessert" value="leche-flan">Leche Flan (P150)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity9" min="1" value="1">
+              <br>
+              <img src="images/halo-halo.png" id="image10" alt="Halo-Halo" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox10" name="dessert" value="halo-halo">Halo-Halo (P100)</label>   
+              <input style="width:35px;text-align: center;" type="number" id="quantity10" min="1" value="1">
+              <br>
+              <img src="images/mango.png" id="image11" alt="Mango Tapioca" width="100" height="100"> 
+              <br>
+              <label><input type="checkbox" id="checkbox11" name="dessert" value="mango-tapioca">Mango Tapioca (P100)</label> 
+              <input style="width:35px;text-align: center;" type="number" id="quantity11" min="1" value="1">
+              <br>
+          </section>
+      
+          <section id="drink">
+              <h2>Drinks</h2>  
+              <img src="images/rh.png" id="image12" alt="Red Horse" width="100" height="100">   
+              <br>
+              <label><input type="checkbox" id="checkbox12" name="drink" value="red-horse">Red Horse (P70)</label> 
+              <input style="width:35px;text-align: center;" type="number" id="quantity12" min="1" value="1">
+              <br>
+              <img src="images/cola.png" id="image13" alt="Coca-Cola" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox13" name="drink" value="coca-cola">Coca-Cola (P60)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity13" min="1" value="1">
+              <br>
+              <img src="images/icetea.png" id="image14" alt="Iced Tea" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox14" name="drink" value="iced-tea">Iced Tea (P50)</label>         
+              <input style="width:35px;text-align: center;" type="number" id="quantity14" min="1" value="1">
+              <br>
+          </section>
+      
+          <section id="add-on">
+              <h2>Add-Ons</h2>
+              <img src="images/shawarma.png" id="image15" alt="Shawarma" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox15" name="add-on" value="shawarma">Shawarma (P95)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity15" min="1" value="1">
+              <br>
+              <img src="images/calamares.png" id="image16" alt="Calamares" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox16" name="add-on" value="calamares">Calamares (P70)</label> 
+              <input style="width:35px;text-align: center;" type="number" id="quantity16" min="1" value="1">
+              <br>
+              <img src="images/frenchfries.png" id="image1" alt="French Fries" width="100" height="100">
+              <br>
+              <label><input type="checkbox" id="checkbox17" name="add-on" value="french-fries">French Fries (P50)</label>
+              <input style="width:35px;text-align: center;" type="number" id="quantity17" min="1" value="1">
+              <br>
+              <br>
+              <br>      
+              <br>                                                                                                                                                                                     
+         </section>   
+         <label id="calculateTotalLabel" class="calculate-button">Calculate Total</label>
+         <footer>
+          <p>&copy; 2024 Mang Ivan. All rights reserved.</p>
+      </footer>
+         </center>    
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <script src="javascript/resto_script.js"></script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
